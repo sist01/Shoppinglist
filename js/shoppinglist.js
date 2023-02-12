@@ -1,2 +1,0 @@
-hei
-console.log
