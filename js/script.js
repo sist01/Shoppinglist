@@ -12,26 +12,26 @@ var list = []
 
 //knappen, lytter på hendelse (click)
 const buttonElement = document.getElementById('addButton');
+buttonElement.onclick = function() {addButton()};
 
 
-// lese verdi av input text og legge til i list
+// Lese verdi av input text og legge til i list
 
 window.addEventListener('keyup', (event) => {
     if(event.code === 'Enter') {
-        shoppiglist();
+        addButton();
     }
 }) ;
 
-/* function addButton() {
+function addButton() {
     const liElement = document.createElement('li');
     if(inputElement.value !=='') {
         liElement.textContent = inputElement.value;
-        resultElement.appendChild(liElement);
+        ulShoppingListElement.appendChild(liElement);
     }
-} */
-
-buttonElement.onclick=addButton();
-
+} 
 
 console.log;
+
+
 
