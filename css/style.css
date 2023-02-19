@@ -15,7 +15,6 @@ main {
 
 .addButton {
     display: flex;
-    display: inline-flex;
     font-size: 1.2rem;
     border-radius: 0.5rem;
     row-gap: 0.3rem;
@@ -28,4 +27,33 @@ main {
     text-decoration: underline;
  }
 
-  
+ html {
+    font-size: 120%;
+    background-color: beige;
+}
+
+input {
+    display: flex;
+    font-size: large;
+    padding: 0.5rem;
+}
+
+ ul li {
+    cursor: pointer;
+    position: relative;
+    transition: 0.2s;
+    list-style: none;
+    border-radius: 0.5rem;
+
+ }
+ 
+ ul li:nth-child(odd) {
+    background: #ffffff;
+ }
+
+ ul li:hover {
+    background: rgba(233, 233, 233, 0.888);
+    text-decoration: underline;
+ }
+
+/* kilde kode på nett til check, uncheck items on the list : https://www.w3schools.com/howto/howto_ja_todolist.asp */
