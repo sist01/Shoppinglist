@@ -1,34 +1,29 @@
 <!DOCTYPE html>
 <html lang="en" lang="no">
     <head>
+
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Shoppinglist</title>
-        <script async src="./js/shoppinglist.js"></script>
-        <link rel="stylesheet" href="./assets/">
-        <link rel="stylesheet" href="./css/">
+        <title>Handleliste</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/reset.css">
+        <script async src="./js/script.js"></script>
 
-    
     </head>
 
-    <body>
-       <h1> Shopping list</h1>
+    <body class="body">
+        <h1> Handleliste </h1>
 
-       <div> 
+        <main>
+            <input type="text" id="addItem" placeholder="Skriv her...">
+            <button class="addButton" id="addButton">Add</button>
 
-        <label for="item"> Add new item </label>
-        <input type="text" name="item" id="item">
-        <button> Add</button>
-        <ul>
+            <section class="flex-container">
+                <article class="flex-item flex-item-2">
+                    <ul id="shoppinglist"></ul>
+                </article>
 
-        </ul>
-        
-       </div>
-
+        </main>
+    
     </body>
-
-    <footer>
-
-    </footer>
-
 </html>
